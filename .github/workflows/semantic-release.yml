@@ -1,0 +1,32 @@
+name: Semantic Release
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build the Docker image
+      run: make build-container
+    
+    - name: Lint Javascript
+      run: make lint
+      
+    - name: Lint Styles
+      run: make lint-css
+    
+    - name: Test Coverage
+      run: make test-coverage
+
+    - name: Semantic Release
+      env:
+        NPM_PUBLISH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}      
+      run: make semantic-release NPM_PUBLISH_TOKEN="$NPM_PUBLISH_TOKEN" GITHUB_TOKEN="$GITHUB_TOKEN"
+    

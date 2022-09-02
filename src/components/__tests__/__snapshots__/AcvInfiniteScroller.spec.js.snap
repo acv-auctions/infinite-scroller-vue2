@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AcvInfiniteScroller.vue Should render infinite scroll should render infinite scroll 1`] = `
+<div
+  class="acv-infinite-scroller"
+>
+   
+  <div
+    class="acv-infinite-scroller"
+    style="height: 50px; position: relative;"
+  >
+    <div
+      class="acv-infinite-scroller-list"
+      style="transform: translateY(0px);"
+    >
+      <div
+        class="acv-infinite-scroller-item"
+      />
+    </div>
+  </div>
+    
+  <!---->
+</div>
+`;

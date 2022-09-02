@@ -1,0 +1,16 @@
+version: 1
+
+merge:
+  ignore:
+    labels: ["do not merge", "waiting on another PR", "draft", "don't merge yet", "UX review needed", "Work in Progress!"]
+    comment_substrings: ["==DO_NOT_MERGE=="]
+  method: squash
+  options:
+    squash:
+      body: summarize_commits
+  delete_after_merge: true
+
+update:
+  ignore:
+    labels: ["WIP", "Work in Progress!", "waiting on another PR"]
+    comment_substrings: ["==WIP=="]
