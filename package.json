@@ -57,10 +57,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/acv-auctions/infinite-scroller-vue2.git"
+    "url": "git+https://github.com/acv-auctions/infinite-scroller-vue2.git"
   },
   "license": "Apache-2.0",
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "description": "> An infinite scroller component implemented in Vue.js 2.",
+  "bugs": {
+    "url": "https://github.com/acv-auctions/infinite-scroller-vue2/issues"
+  },
+  "homepage": "https://github.com/acv-auctions/infinite-scroller-vue2#readme",
+  "author": "ACV Auctions"
 }
