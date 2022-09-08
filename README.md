@@ -6,7 +6,7 @@
 ## How to use:
 
 ```bash
-npm i --save @acv/infinite-scroller-vue2
+npm i --save @acva/infinite-scroller-vue2
 ```
 
 Usage Example:
