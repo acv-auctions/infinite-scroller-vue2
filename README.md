@@ -48,7 +48,16 @@ export default {
 </script>
 ```
 
-## Props:
+## Local Development:
+
+Run the following command:
+```sh
+nvm use \
+&& npm i \
+&& npm run dev
+```
+
+### Props:
 ```javascript
 /**
  * Loading for the pull to refresh and to emit when reached bottom of list
@@ -175,13 +184,13 @@ viewportChunksDefinitions: {
 },
 ```
 
-## Slots
+### Slots
 
 * `<template #before>` - rendered before the list of items
 * `<template #default="{ item, index }">` - each rendered item
 * `<template #after>` - rendered after the list of items
 * `<template #loading>` - replaces the default loading indicator
 
-## Contributing
+### Contributing
 
 Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details on how to contribute to the project.
