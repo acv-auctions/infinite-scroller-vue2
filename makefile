@@ -36,4 +36,4 @@ test-coverage:
 
 .PHONY: semantic-release
 semantic-release: 
-	docker run -i -e NPM_TOKEN="$(NPM_PUBLISH_TOKEN)" -e GH_TOKEN="$(GITHUB_TOKEN)" '$(CONTAINER_NAME)' npx semantic-release
+	docker run -i -e NPM_TOKEN="$(NPM_PUBLISH_TOKEN)" -e GH_TOKEN="$(GITHUB_TOKEN)" '$(CONTAINER_NAME)' npx semantic-release --no-ci

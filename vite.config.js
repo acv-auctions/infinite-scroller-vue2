@@ -10,7 +10,7 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, 'src/index.js'),
-      name: '@acv/infinite-scroller-vue2',
+      name: '@acva/infinite-scroller-vue2',
       fileName: (format) => `infinite-scroller-vue2.${format}.js`,
     },
     rollupOptions: {

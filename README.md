@@ -1,4 +1,4 @@
-# @acv/infinite-scroller-vue2
+# @acva/infinite-scroller-vue2
 > An infinite scroller component implemented in Vue.js 2.
 
 [![Release](https://github.com/acv-auctions/infinite-scroller-vue2/actions/workflows/semantic-release.yml/badge.svg)](https://github.com/acv-auctions/infinite-scroller-vue2/actions/workflows/semantic-release.yml)
@@ -33,7 +33,7 @@ Usage Example:
 export default {
   name: 'SomeComponent',
   components: {
-   AcvInfiniteScroller: () => import('@acv/infinite-scroller-vue2'), // dynamic import
+   AcvInfiniteScroller: () => import('@acva/infinite-scroller-vue2'), // dynamic import
   },
   computed: {
     dataCollection() {
