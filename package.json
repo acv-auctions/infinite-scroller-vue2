@@ -59,5 +59,8 @@
     "type": "git",
     "url": "https://github.com/acv-auctions/infinite-scroller-vue2.git"
   },
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public"
+  }
 }
