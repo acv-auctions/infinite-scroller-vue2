@@ -28,6 +28,7 @@
           <template v-else>
             <slot v-bind="{ item, index }" />
           </template>
+          <slot name="appendRow" v-bind="{ item, index }" />
         </div>
       </div>
     </div>
