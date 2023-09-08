@@ -15,7 +15,9 @@ exports[`AcvInfiniteScroller.vue Should render infinite scroll should render inf
     >
       <div
         class="acv-infinite-scroller-item"
-      />
+      >
+         
+      </div>
     </div>
   </div>
     
