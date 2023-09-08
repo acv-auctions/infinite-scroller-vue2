@@ -28,7 +28,10 @@
           <template v-else>
             <slot v-bind="{ item, index }" />
           </template>
-          <slot name="appendRow" v-bind="{ item, index }" />
+          <slot
+            name="appendRow"
+            v-bind="{ item, index }"
+          />
         </div>
       </div>
     </div>
@@ -192,8 +195,7 @@ export default {
       return `infinite-scroller-list-${this.inputId}`;
     },
     wrapHeight() {
-      const totalHeight = this.itemCount * this.rowHeight;
-      return totalHeight;
+      return this.itemCount * this.rowHeight;
     },
     infiniteScrollerWrapStyle() {
       return {
@@ -254,8 +256,7 @@ export default {
     * The translateY amount to be applied to the list
     */
     offsetY() {
-      const offset = this.startIndex * this.rowHeight;
-      return offset;
+      return this.startIndex * this.rowHeight;
     },
     /*
     * Apply the offsetY to the list containing the data sources
@@ -382,10 +383,9 @@ export default {
         .sort((a, b) => a - b);
       const resolution = resolutions.filter((r) => (r <= this.windowWidth)).pop();
       if (resolution) {
-        const itemsPerRow = this.viewportChunksDefinitions[`${resolution}`]
-                    || this.viewportChunksDefinitions[`${resolution}px`]
-                    || 1;
-        return itemsPerRow;
+        return this.viewportChunksDefinitions[`${resolution}`]
+          || this.viewportChunksDefinitions[`${resolution}px`]
+          || 1;
       }
       return 1;
     },
